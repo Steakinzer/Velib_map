@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px red solid; */
+}
+
+#map {
+  height: 600px;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  max-width: 90vw;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 50px;
+  /* justify-content: center; */
+}
+body {
+  background-image: url(https://images.unsplash.com/photo-1637946175559-22c4fe13fc54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.station {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 6px 6px 51px -3px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 6px 6px 51px -3px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 6px 6px 51px -3px rgba(0, 0, 0, 0.41);
+  backdrop-filter: blur(10px);
+}
+.station h2 {
+  font-size: 1rem;
+}
+.station p {
+  font-size: 0.8rem;
+}
+
+.auto-grid {
+  --min-column-size: 15rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--min-column-size), 100%), 1fr)
+  );
+}
